@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: 326b08d1631d2b746897a069112ce61b
+timeCreated: 1509396479
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: ArrowPointingX
+    100004: ArrowPointingY
+    100006: ArrowPointingZ
+    100008: NavArrow
+    100010: Cube
+    100012: Dynocube
+    100014: pentapill
+    100016: plusBlenderXup
+    100018: plusBlenderZup
+    100020: Star
+    100022: smallKey
+    100024: obfPanne1bux2bu
+    100026: obfPannelBlenderUnit
+    400000: //RootNode
+    400002: ArrowPointingX
+    400004: ArrowPointingY
+    400006: ArrowPointingZ
+    400008: NavArrow
+    400010: Cube
+    400012: Dynocube
+    400014: pentapill
+    400016: plusBlenderXup
+    400018: plusBlenderZup
+    400020: Star
+    400022: smallKey
+    400024: obfPanne1bux2bu
+    400026: obfPannelBlenderUnit
+    2300000: ArrowPointingX
+    2300002: ArrowPointingY
+    2300004: ArrowPointingZ
+    2300006: NavArrow
+    2300008: Cube
+    2300010: Dynocube
+    2300012: pentapill
+    2300014: plusBlenderXup
+    2300016: plusBlenderZup
+    2300018: Star
+    2300020: smallKey
+    2300022: obfPanne1bux2bu
+    2300024: obfPannelBlenderUnit
+    3300000: ArrowPointingX
+    3300002: ArrowPointingY
+    3300004: ArrowPointingZ
+    3300006: NavArrow
+    3300008: Cube
+    3300010: Dynocube
+    3300012: pentapill
+    3300014: plusBlenderXup
+    3300016: plusBlenderZup
+    3300018: Star
+    3300020: smallKey
+    3300022: obfPanne1bux2bu
+    3300024: obfPannelBlenderUnit
+    4300000: ArrowPointingX
+    4300002: ArrowPointingZ
+    4300004: ArrowPointingY
+    4300006: NavArrow
+    4300008: Cube
+    4300010: Dynocube
+    4300012: pentapill
+    4300014: plusBlenderZup
+    4300016: Star
+    4300018: plusBlenderXup
+    4300020: smallKey
+    4300022: obfPannelBlenderUnit
+    4300024: obfPanne1bux2bu
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
