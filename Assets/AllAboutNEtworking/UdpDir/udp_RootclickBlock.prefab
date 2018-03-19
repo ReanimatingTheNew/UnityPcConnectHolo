@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 102781705075659024}
   - component: {fileID: 114468952917108314}
   m_Layer: 0
-  m_Name: AnchorText
+  m_Name: rootclickblockText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124,7 +124,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1389901971133764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0.717, y: 0.03, z: 2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4341761355834180}
@@ -140,8 +140,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1499681144051330}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.079, y: -0.059, z: 0}
-  m_LocalScale: {x: 0.18, y: 0.08, z: 0.1}
+  m_LocalPosition: {x: -0.1, y: -0.059, z: 0}
+  m_LocalScale: {x: 0.18, y: 0.05, z: 0.1}
   m_Children:
   - {fileID: 4499818453474360}
   m_Father: {fileID: 4264736727425056}
@@ -155,7 +155,7 @@ Transform:
   m_GameObject: {fileID: 1359641105551934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.37, y: 0.34, z: -0.51}
-  m_LocalScale: {x: 0.12, y: 0.12, z: 0.12}
+  m_LocalScale: {x: 0.12, y: 0.2, z: 0.12}
   m_Children: []
   m_Father: {fileID: 4341761355834180}
   m_RootOrder: 0
@@ -167,8 +167,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1800550007229350}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.134, y: -0.059, z: 0}
-  m_LocalScale: {x: 0.18, y: 0.08, z: 0.099999994}
+  m_LocalPosition: {x: -0.1, y: -0.131, z: 0}
+  m_LocalScale: {x: 0.18, y: 0.05, z: 0.099999994}
   m_Children:
   - {fileID: 4636599365306698}
   m_Father: {fileID: 4264736727425056}
@@ -182,7 +182,7 @@ Transform:
   m_GameObject: {fileID: 1331104136387732}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.37, y: 0.34, z: -0.51}
-  m_LocalScale: {x: 0.12, y: 0.12, z: 0.12}
+  m_LocalScale: {x: 0.12, y: 0.2, z: 0.12}
   m_Children: []
   m_Father: {fileID: 4522739402916518}
   m_RootOrder: 0
@@ -194,7 +194,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1904227626786868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.021000005, z: 0}
+  m_LocalPosition: {x: -0.2003, y: -0.087, z: 0}
   m_LocalScale: {x: 0.005, y: 0.005, z: 0.02}
   m_Children: []
   m_Father: {fileID: 4264736727425056}
@@ -213,7 +213,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 03db15532e2d99a46aa5afec3e4dceda, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -341,7 +341,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 03db15532e2d99a46aa5afec3e4dceda, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -405,7 +405,9 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1331104136387732}
-  m_Text: "Delete \nLocals"
+  m_Text: 'Button B
+
+    send msg 2'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -426,7 +428,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1359641105551934}
-  m_Text: "Show Local \nAnhors"
+  m_Text: "button A \nsend msg 1"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -447,22 +449,20 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1904227626786868}
-  m_Text: 'list of anchors
-
-'
+  m_Text: udp rootclick block
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
-  m_Anchor: 4
-  m_Alignment: 1
+  m_Anchor: 2
+  m_Alignment: 2
   m_TabSize: 4
-  m_FontSize: 48
+  m_FontSize: 25
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4279549695
 --- !u!114 &114224975926786874
 MonoBehaviour:
   m_ObjectHideFlags: 1

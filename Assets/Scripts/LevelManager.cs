@@ -13,4 +13,8 @@ public class LevelManager : MonoBehaviour
 
         SceneManager.LoadScene(sceneIndex);
     }
+
+    public void LoadSceneNamed(string argName) {
+        SceneManager.LoadScene(argName);
+    }
 }

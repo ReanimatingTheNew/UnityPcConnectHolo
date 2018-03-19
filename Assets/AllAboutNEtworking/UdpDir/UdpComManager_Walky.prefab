@@ -88,7 +88,7 @@ Transform:
   m_GameObject: {fileID: 1920874089287312}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.64, y: 1.84, z: 0.12}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 4714782176757960}
   m_RootOrder: 0
@@ -100,7 +100,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1567875509364420}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.246, y: -0.034, z: 1.471}
+  m_LocalPosition: {x: 0.122, y: -0.201, z: 2.093}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 4714782176757960}
@@ -129,7 +129,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1422699074667924}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.36, y: -0.09, z: 0}
+  m_LocalPosition: {x: -0.36, y: 2.92, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 4714782176757960}
@@ -268,13 +268,13 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1920874089287312}
-  m_Text: receiving
+  m_Text: rec
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
   m_Anchor: 2
-  m_Alignment: 0
-  m_TabSize: 4
+  m_Alignment: 2
+  m_TabSize: 2
   m_FontSize: 0
   m_FontStyle: 0
   m_RichText: 1
@@ -323,8 +323,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UDPMessageEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  MeIsServer: 0
-  otherMachineType: 0
 --- !u!114 &114910795720705562
 MonoBehaviour:
   m_ObjectHideFlags: 1

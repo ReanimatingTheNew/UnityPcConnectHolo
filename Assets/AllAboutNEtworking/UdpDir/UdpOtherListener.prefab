@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33218651142085078}
   - component: {fileID: 65229967932988836}
   - component: {fileID: 23223772510301400}
-  - component: {fileID: 114001748251929112}
+  - component: {fileID: 114189198267619820}
   m_Layer: 0
   m_Name: UdpOtherListener
   m_TagString: Untagged
@@ -54,8 +54,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1170264324343282}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.10000001, y: 0.037735853, z: 0.5333334}
+  m_LocalPosition: {x: -0.35, y: 0, z: 0}
+  m_LocalScale: {x: 0.10000001, y: 0.1, z: 0.5333334}
   m_Children: []
   m_Father: {fileID: 4983184614428462}
   m_RootOrder: 0
@@ -67,8 +67,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1111329467675436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.446, y: 0.009, z: 1.982}
-  m_LocalScale: {x: 0.2, y: 0.53, z: 0.03}
+  m_LocalPosition: {x: 0.446, y: -0.289, z: 2.5}
+  m_LocalScale: {x: 0.2, y: 0.1, z: 0.03}
   m_Children:
   - {fileID: 4343932075964052}
   m_Father: {fileID: 0}
@@ -87,7 +87,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 03db15532e2d99a46aa5afec3e4dceda, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -178,7 +178,7 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4279045631
---- !u!114 &114001748251929112
+--- !u!114 &114189198267619820
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -186,7 +186,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1111329467675436}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc7f09273dcb3344e8fa3bb952fd2e9d, type: 3}
+  m_Script: {fileID: 11500000, guid: a7ca76255840200498315277031f7f84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMeshBox: {fileID: 102177586730759248}

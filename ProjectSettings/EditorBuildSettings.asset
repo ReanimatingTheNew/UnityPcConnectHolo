@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainServer.unity
-    guid: 92f7d15c59e0b4248accd6ad1a7975da
+    path: Assets/Scenes/AppStartScene.unity
+    guid: 0735aa4cdbea49e4892006ac83f59224
   - enabled: 1
     path: Assets/Scenes/UdpMainMenu.unity
     guid: 84e44b9a36fbc3f4fb6f1532d54d5679
+  - enabled: 1
+    path: Assets/Scenes/Udp_SendRec_HL_UWP.unity
+    guid: bbbcf56b59878b64ea6ddffa670b8c54
