@@ -61,6 +61,7 @@ public class UDPCommunication : MonoBehaviour
         //LAPTOP-SS5QVBK2
         //Holo-01
         //Holo-02
+        Debug.Log("my host name is " + MeTheHostMyName);
         switch (MeTheHostMyName)
         {
             case "msipc":
@@ -189,22 +190,54 @@ public class UDPCommunication : MonoBehaviour
         HostName IP = null;
         try
         {
-            var icp = NetworkInformation.GetInternetConnectionProfile();
 
-         Console3D.Instance.LOGit("icp.netadaptor id = " + icp.NetworkAdapter.NetworkAdapterId.ToString());
 
-            IP = Windows.Networking.Connectivity.NetworkInformation.GetHostNames()
-            .SingleOrDefault(
-                hn =>
-                    hn.IPInformation?.NetworkAdapter != null && hn.IPInformation.NetworkAdapter.NetworkAdapterId
-                    == icp.NetworkAdapter.NetworkAdapterId);
-         Console3D.Instance.LOGit("not even using gamesettings -> my socket is = " + IP.ToString() + " " + internalPort);
+
+            //last or default .. list is Holo-01, Holo-01 local, some weird ipv6, 192.168.1.201
+
+            IP = NetworkInformation.GetHostNames().LastOrDefault(h =>
+                    h.IPInformation != null &&
+                    h.IPInformation.NetworkAdapter != null);
+
+            Console3D.Instance.LOGit("-------------" + NetworkInformation.GetHostNames().Count);
+            foreach (HostName hn in NetworkInformation.GetHostNames()) {
+                Console3D.Instance.LOGit("fe netadaptor id = " + hn.RawName.ToString());
+            }
+
+            Console3D.Instance.LOGit("-------------");
+            string ipAddress = IP.RawName; //XXX.XXX.XXX.XXX
+
+            Console3D.Instance.LOGit("fe IPraw  = " + ipAddress);
+
+
+
+
+
+            // var icp = NetworkInformation.GetInternetConnectionProfile();
+
+            //Console3D.Instance.LOGit("icp.netadaptor id = " + icp.NetworkAdapter.NetworkAdapterId.ToString());
+
+            //   IP = Windows.Networking.Connectivity.NetworkInformation.GetHostNames()
+            //   .FirstOrDefault(
+            //       hn =>
+            //           hn.IPInformation?.NetworkAdapter != null && hn.IPInformation.NetworkAdapter.NetworkAdapterId
+            //           == icp.NetworkAdapter.NetworkAdapterId);
+           // Console3D.Instance.LOGit(" my socket is = " + IP.ToString() + " or is it "+ ipAddress+"  p-> " + internalPort);
             await socket.BindEndpointAsync(IP, internalPort);
+
+
+
+
+            //Windows.Networking.HostName serverHost = new Windows.Networking.HostName(MeTheHostMyName);
+
+            //Console3D.Instance.LOGit("not even using gamesettings -> my socket is = " + serverHost.ToString() + " " + internalPort);
+
+            //await socket.BindEndpointAsync(serverHost, internalPort);
         }
         catch (Exception e)
         {
-            Debug.Log(e.ToString());
-            Debug.Log(SocketError.GetStatus(e.HResult).ToString());
+            Debug.Log(" udpconn yo error1"+ e.ToString());
+            Debug.Log(" udpconn yo error2"+ SocketError.GetStatus(e.HResult).ToString());
             return;
         }
         //SendUDPMessage(externalIP, externalPort, Encoding.UTF8.GetBytes(PingMessage));
